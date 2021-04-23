@@ -1,6 +1,8 @@
-from entities import Site
+from entities import sites
+from sites import Site
 
 
 class Petz(Site):
     def scrap():
-        driver.get("http://www.python.org")
+        self.driver.get("http://www.python.org")
+        self.driver.close()
