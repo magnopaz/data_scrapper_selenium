@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
 from chromedriver_py import binary_path
+from entities import petz
 
 
 class Site:
@@ -18,7 +19,16 @@ class Site:
         pass
 
 
+class Petz(Site):
+    def __init__(self) -> None:
+        super().__init__("Petz", "https://www.petz.com.br/")
+
+    def scrap():
+        super.self.driver.get(super.self.base_url)
+        super.self.driver.close()
+
+
 def sites_list():
     sites = []
-    sites.append(Site("Petz", "https://www.petz.com.br/"))
+    sites.append(Petz())
     return sites
