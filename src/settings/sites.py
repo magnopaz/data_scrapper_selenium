@@ -7,8 +7,7 @@ class Site:
         self.base_url = base_url
 
 
-
-def sites_list() -> list[Site]:
-    sites = list[Site]
-    sites.append(Site('Petz', ''))
+def sites_list():
+    sites = []
+    sites.append(Site("Petz", ""))
     return sites
