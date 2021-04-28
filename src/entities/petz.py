@@ -1,6 +1,7 @@
-from entities import sites
+from entities import site
 
-class Petz(sites.Site):
+
+class Petz(site.Site):
     def __init__(self) -> None:
         super().__init__("Petz", "https://www.petz.com.br/")
 
